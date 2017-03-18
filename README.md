@@ -5,6 +5,7 @@ text2file is a bookmarklet which takes your highlighted text and saves it to a t
 ## Installation
 
 Use like any other bookmarklet; create a new bookmark and paste the JavaScript into the URL field.
+Note due to this bug https://bugzilla.mozilla.org/show_bug.cgi?id=85686 in FireFox you cannot save text from a form feild.
 
 ## Contributing
 
@@ -13,11 +14,6 @@ Use like any other bookmarklet; create a new bookmark and paste the JavaScript i
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
-
-## History
-
-1.0: Initial Commit
-1.1: Updated README
 
 ## Credits
 
