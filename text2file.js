@@ -1,7 +1,6 @@
 javascript:(function(){
 	var textFile = null;
-	var html = "";
-
+	var selection = "";
 	/*Creates a new blob with the highlighted text*/
 	function makeTextFile (text, buttonRef) {
 		var data = new Blob ([text], {type: 'text/plain'});
@@ -43,10 +42,10 @@ javascript:(function(){
 		popup.style.display = 'inline';
 	}
 
-	html = window.getSelection().toString();
+	selection = window.getSelection().toString();
 	var saveBtn = document.getElementById('downloadlink');
 	var cancelBtn = document.getElementById('cancelSave');
 	cancelBtn.onclick=function(){closePopup()};
-	saveBtn.href = makeTextFile(html, saveBtn);
+	saveBtn.href = makeTextFile(selection, saveBtn);
 	saveBtn.onclick = function(){closePopup();};
 })()
