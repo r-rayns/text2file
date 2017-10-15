@@ -23,7 +23,7 @@ javascript:(function(){
 	if(document.getElementById("popup")===null) {
 		document.body.insertAdjacentHTML('beforeend', `
 		<div id='popup' style='position:fixed; top:50%; left:50%; margin-left:-200px; height:100px;
-		 width:400px; background-color:rgba(51, 51, 51); text-align: center; z-index:999; border-radius: 10px;'>
+		 width:400px; background-color:rgba(51, 51, 51, 0.9); text-align: center; z-index:999; border-radius: 10px;'>
 			<span style='display:block; vertical-align:middle; line-height:100px;'>
 		 		<a download='snippet.txt'} id='downloadlink' style='color:#FFFFFF; padding:5px; margin-right:5px; border-radius: 5px; text-transform: uppercase;
 		 		font-weight: 600; border-color: #3D9970; background-color: #3D9970;'>
